@@ -5,11 +5,11 @@ public class Oyun {
     private Oyuncu oyuncular[];
     private Tahta tahta;
 
-    public Oyun(int M, int N){
+    public Oyun(){
         oyuncular = new Oyuncu[2];
         oyuncular[0] = new InsanOyuncu("Ilker");
         oyuncular[1] = new BilgisayarOyuncu("SkyNet", 5, DegerlendirmeFonksiyonuTipi.KARMASIK);
-        tahta = new Tahta(M, N);
+        tahta = new Tahta();
     }
 
     public void oyna(){

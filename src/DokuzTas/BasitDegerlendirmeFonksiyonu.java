@@ -8,7 +8,7 @@ public class BasitDegerlendirmeFonksiyonu implements DegerlendirmeFonksiyonu {
         this.tahta = tahta;
     }
     public double degerlendir() {
-        switch (tahta.dorduAyniDizi()){
+        switch (tahta.ucuAyniDizi()){
             case SARI:return 0;
             case MAVI:return 1;
             case BOS:return 0.5;
